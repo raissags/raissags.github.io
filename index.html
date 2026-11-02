@@ -2,14 +2,6 @@
 <!-- ============================================================
      TEMPLATE — Página pessoal com CSS Grid
      Programação Web / Introdução às Tecnologias Web — IFAL
-     COMO USAR:
-     1) Copie ESTE index.html para o seu repositório (não mude a estrutura).
-     2) Escolha UM dos 3 temas de CSS (tema-1-indigo.css, tema-2-escuro.css
-        ou tema-3-editorial.css) e salve-o no seu projeto como  estilo.css
-        (é o nome que este HTML carrega logo abaixo).
-     3) Troque os textos marcados com "TROQUE" pelo seu conteúdo.
-     IMPORTANTE: o LAYOUT é feito com CSS Grid e é o mesmo nos 3 temas.
-     Você escolhe a APARÊNCIA (fonte, cores, bordas), não o layout.
      ============================================================ -->
 <html lang="pt-BR">
 
@@ -24,7 +16,7 @@
 <body>
   <div class="pagina">
 
-    <!-- ====== CABEÇALHO — TROQUE pelo seu nome e sua frase ====== -->
+    <!-- ====== CABEÇALHO ====== -->
     <header class="cabecalho">
       <h1>Raissa Guilhermino Santos</h1>
       <p>Desenvolvimento de Sistemas · IFAL</p>
@@ -39,43 +31,45 @@
     <main class="principal">
       <section id="sobre" class="cartao">
         <h2>Sobre mim</h2>
-        <!-- TROQUE por uma breve apresentação sua -->
-        <p>Me chamo Raissa, tenho 16 anos, gosto muito de escutar MPB e passear pela praia, e gosto muito de programar em Java Script.</p></p>
+        <p>Me chamo Raissa, tenho 16 anos, gosto muito de escutar MPB e passear pela praia, e gosto muito de programar em JavaScript.</p>
       </section>
 
       <section id="projetos" class="cartao">
-        <h2>Projetos</h2>
-        <!-- Galeria com Grid: cada .projeto é um card; adicione/remova à vontade -->
+        <h2>Projetos e Atividades</h2>
+        <!-- Galeria com Grid: cada .projeto é um card -->
         <div class="projetos">
           <article class="projeto">
-            <h3>Projeto 1</h3>
-            
-            <a href="loja/index.html">Minha Loja Virtual</a>
-            
+            <h3>Capítulo 4</h3>
+            <a href="cap4/at01.html">Atividade 1 — Tabela Básica</a><br>
+            <a href="cap4/at02.html">Atividade 2 — Tabela Semântica com Mesclagem</a><br>
+            <a href="cap4/at03.html">Atividade 3 — Listas Avançadas e Glossário</a><br>
+            <a href="cap4/at04.html">Atividade 4 — Página Multimídia</a>
           </article>
-          <article class="projeto">
-            <h3>Projeto 2</h3>
 
-            <a href="cap04/at01.html">Tabela Semantica</a>
-            <a href="cap4/at02.html">Tabela Semantica com mesclagem</a>
-            <a href="cap04/at03.html"></a>
-            <a href="cap04/at04.html"></a>
-          </article>
           <article class="projeto">
-            <h3>Projeto 3</h3>
-            
+            <h3>Capítulo 5</h3>
+            <a href="cap5/atv01.html">Atividade 1 — Formulário de Contato</a><br>
+            <a href="cap5/atv02.html">Atividade 2— Cadastro de Usuário</a><br>
+            <a href="cap5/atv04.html">Atividade 4 — Inscrição em Evento</a><br>
+            <a href="cap5/atv05.html">Atividade 5— Pesquisa Acadêmica</a>
           </article>
-        
-            
-        </div>
-      </section>
-    </main>
+
+          <article class="projeto">
+            <h3>Capítulo 6</h3>
+            <a href="cap06/atv01.html">Prática em Grupo — Formulários HTML</a>
+          </article>
+
+          <article class="projeto">
+            <h3>Capítulo 7</h3>
+            <a href="cap7/atv01.css">Atividade Prática CSS 02 — Refatoração de Seletores e Unidades CSS</a>[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
+          </article>
+
+          
 
     <!-- ====== BARRA LATERAL ====== -->
     <aside class="lateral">
       <section class="cartao">
         <h2>Habilidades</h2>
-        <!-- TROQUE pelas suas habilidades -->
         <ul class="habilidades">
           <li>HTML</li>
           <li>CSS</li>
@@ -86,16 +80,15 @@
 
       <section id="contato" class="cartao">
         <h2>Contato</h2>
-        <!-- TROQUE pelos seus links -->
         <ul class="contato">
-          <li>✉️ <a href="malito:rgs33@aluno.ifal.edu.br">rgs33@aluno.ifal.edu.br</a></li>
-          <li>🐙 <a href="https://github.com/raissags">github.com/raissags</a></li>
+          <li>✉️ <a href="mailto:rgs33@aluno.ifal.edu.br">rgs33@aluno.ifal.edu.br</a></li>
+          <li>🐙 <a href="https://github.com/raissags" target="_blank">github.com/raissags</a></li>
         </ul>
       </section>
     </aside>
 
-    <!-- ====== RODAPÉ — TROQUE o nome ====== -->
-    <footer class="rodape">© 2026 Raissa· feito com HTML + CSS Grid</footer>
+    <!-- ====== RODAPÉ ====== -->
+    <footer class="rodape">© 2026 Raissa · Feito com HTML + CSS Grid</footer>
 
   </div>
 </body>

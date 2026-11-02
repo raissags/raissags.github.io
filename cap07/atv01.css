@@ -1,1 +1,216 @@
+/* =======================================================================
+   Refatoração de Seletores e Unidades CSS - Atividade 01
+   Reflexão (Bloco 1): 
+   - rem: Relativo à raiz (html), ótimo para tipografia consistente.
+   - em: Relativo ao elemento pai/atual, ideal para padding/margin proporcionais.
+   - %: Relativo ao elemento container, essencial para larguras fluidas.
+   ======================================================================= */
+
+/* ---------- Base ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 2rem;
+}
+
+.cabecalho h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cabecalho .legenda {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+/* Descendente (Bloco 2) */
+.menu a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* Pseudo-classes e Pseudo-elementos (Blocos 3 e 4) */
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu li:first-child a::before {
+  content: "▶ ";
+}
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 2rem;
+  max-width: 60rem; /* Equivalente a 960px com base 16px */
+}
+
+/* Agrupamento de títulos (Bloco 2) */
+h1, h2, h3 {
+  color: #1565c0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Irmão adjacente: recuo no parágrafo após h2 (Bloco 2) */
+h2 + p {
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #0d47a1;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Irmão geral (Bloco 2) */
+.destaque ~ p {
+  font-style: italic;
+}
+
+.destaque {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b71c1c;
+}
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 85%;
+  max-width: 280px;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+/* Exclusão com :not() - margem em todos exceto o último (Bloco 3) */
+.cartao:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Alternância com :nth-child (Bloco 3) */
+.cartao:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.cartao:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.botao:hover {
+  background-color: #0d47a1;
+}
+
+/* ---------- Lista de programação ---------- */
+.lista-dias {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+/* Filho direto para itens de primeiro nível (Bloco 2) */
+.lista-dias > li {
+  font-weight: bold;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 30rem;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Asterisco de campo obrigatório (Bloco 4) */
+label::after {
+  content: " *";
+  color: #b71c1c;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #999999;
+}
+
+input:focus, textarea:focus {
+  border-color: #1565c0;
+  outline: none;
+}
+
+/* Seletores de atributo (Bloco 4) */
+input[type="email"] {
+  border-left: 4px solid #1565c0;
+}
+
+input[type="password"] {
+  border-left: 4px solid #b71c1c;
+}
+
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border: 0;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+}
 
